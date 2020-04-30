@@ -21,5 +21,19 @@ public class LandTractDemo {
 
         System.out.println("please enter the length and width of the second tract of land");
         LandTract landTract2 = new LandTract(keyboard.nextDouble(), keyboard.nextDouble());
+
+        System.out.println("----------------------------------");
+
+        System.out.println(landTract1.toString());
+        System.out.println(landTract2.toString());
+
+        System.out.println("----------------------------------");
+
+        if (landTract2.equals(landTract1)) {
+            System.out.println("The area of the tracts are of equal size");
+        } else {
+            System.out.println("The area of the tracts are not of equal size");
+        }
     }
+
 }
